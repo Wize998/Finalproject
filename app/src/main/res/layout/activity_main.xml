@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:rotationY="-360"
+    tools:context=".MainActivity">
+
+
+
+
+    <ImageView
+        android:id="@+id/ic_outside"
+        android:layout_width="700dp"
+        android:layout_height="700dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/out2" />
+
+    <ImageView
+        android:id="@+id/ic_inside"
+        android:scaleType="centerInside"
+        android:layout_width="280dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/main" />
+
+    <Button
+        android:id="@+id/buttoneven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="580dp"
+
+        android:text="Spin" />
+
+
+
+    <ImageView
+        android:id="@+id/pointer"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="170dp"
+        android:layout_marginVertical="260dp"
+        app:srcCompat="@drawable/pointer" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="120dp"
+        android:text="" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPoints"
+        android:text=""
+
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="60dp"
+        android:layout_centerHorizontal="true"
+        android:text="Rule:You will get a random number from 1-60 which you can see by the points on the top left, for each spin you will either add (red) or subtract (black) the amount that you roll, you win if the points eventully ruen out to be equal or greater than 50. Have Fun! " />
+
+
+</RelativeLayout>
